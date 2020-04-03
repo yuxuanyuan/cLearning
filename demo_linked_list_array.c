@@ -16,6 +16,7 @@
  *  3) add an item
  *  4) delete an item and
  *  5) reverse all items
+ *  6) destroy a dict
  *
  * Note: When key == -1, the program completes.
  */
