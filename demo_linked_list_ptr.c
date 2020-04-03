@@ -14,8 +14,8 @@
  *  1) create a dict
  *  2) print a dict
  *  3) add an item
- *  4) delete an item and
- *  5) reverse all items
+ *  4) delete an item
+ *  5) reverse all items and
  *  6) destory the dict
  *
  * Note: When key == -1, the program completes.
