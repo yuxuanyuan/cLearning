@@ -4,8 +4,6 @@
 #include <stdio.h>
 #include <string.h>
 
-#define MAX 128 // max length of a string
-
 /* typedef a structure named Dict (dictionary)
  * In the dictionary, you have items with keys and values
  * Here I define the key is a integer and the value is
