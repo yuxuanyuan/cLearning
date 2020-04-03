@@ -1,4 +1,4 @@
-// An example is to show how to use a linked list
+// An example to show how to use a linked list
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -17,7 +17,7 @@
  *  4) delete an item and
  *  5) reverse all items
  *
- * Note: When key == -1, the program complete.
+ * Note: When key == -1, the program completes.
  */
 
 /* TODO:
