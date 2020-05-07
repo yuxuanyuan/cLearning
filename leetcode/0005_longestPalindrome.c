@@ -4,7 +4,7 @@
 #include <string.h>
 
 char * longestPalindrome(char * s) {
-    int start, j, p, q, n;
+    int start, j, q, n;
     if (NULL == s) return NULL;
     int len = strlen(s);
     if(len <= 1) return s;
@@ -14,17 +14,24 @@ char * longestPalindrome(char * s) {
         start = 0;
         while (start + strLen <= len)
         {
-            for (j = 0; j < strLen; j++)
-                str[j] = s[start + j];
-            str[j] = '\0';
             n = 0;
-            for (p = 0, q = strLen -1;p < strLen/2; p++, q--)
+            for (j = 0, q = strLen -1; j < strLen/2; j++, q--)
             {
-                if (str[p] == str[q])
+                str[j] = s[start + j];
+                str[q] = s[start + q];
+                if (str[j] == str[q])
                     n++;
+                else
+                    break;
             }
+
             if (n == strLen/2)
+            {
+                if (strLen%2 != 0) str[j] = s[start + j];
+                str[strLen] = '\0';
                 return str;
+            }
+                
             else
                 start++;
         }
