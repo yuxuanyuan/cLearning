@@ -45,4 +45,5 @@ int main()
     int nums2[] = {2,3,4};
     double ret = findMedianSortedArrays(nums1, 3, nums2, 3 );
     printf("%lf\n", ret);
+    return 0;
 }
