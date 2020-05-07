@@ -50,4 +50,5 @@ int main()
     char s[] = "abcdefgaabbcceeddffggssabcderg";
     int ret = lengthOfLongestSubstring(s);
     printf("%d\n", ret);
-
+    return 0;
+}
